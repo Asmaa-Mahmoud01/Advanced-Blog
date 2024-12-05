@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --header-color:#00ABE4;
+    --header-border:#0383ae;
+    --button-color:#ef683b;
+    --button-hover:#d5613a;
+    --body-color: #E9F1FA;
+    --post-border:#ddd;
+    --sidebar-color:#f8f9fa;
+    --footer-color:#313b45;
+    --link-color:#E43900;
+}
+body{
+    background-color: var(--body-color);
+}
+header{
+    background-color: var(--header-color);
+}
+header .navbar-nav .nav-item a{
+    color: white;
+    padding: 7px 10px;
+    transition: none;
+}
+header .navbar-nav .nav-item a:hover{
+    color:var(--header-color) ;
+    border-style: solid;
+    border-color: transparent transparent var(--header-border);
+    border-width: 2px;
+    background-color: var(--body-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px 8px;
+}
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: white;
+}
+.post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.post p {
+    line-height: 1.6;
+}
+.btn-primary {
+    background-color:var(--button-color);
+    border: none;
+}
+.btn-primary:hover {
+    background-color: var(--button-hover);
+}
+.btn-primary:focus {
+    border:none;
+    box-shadow:none;
+    background-color: var(--button-hover);
+}
+aside .card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+aside .card ul li a{
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 7px;
+}
+aside ul li a:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent var(--button-color);
+    background-color: var(--body-color);
+    border-radius: 5px;
+    padding:7px 7px 7px 10px;
+}
+footer {
+    margin-top: 40px;
+    background-color: var(--footer-color);
+}
+#backToTop {
+    z-index: 1000;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    bottom: 50px;
+}
+
+#backToTop:hover {
+    opacity: 1;
+    color: var(--button-hover);
+}
+#backToTop:focus {
+    color: var(--button-hover);
+}

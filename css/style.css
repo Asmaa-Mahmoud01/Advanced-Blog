@@ -17,6 +17,7 @@
 body{
     background-color: var(--body-color);
 }
+/* header */
 header{
     background-color: var(--header-color);
 }
@@ -45,7 +46,7 @@ header::after {
     height: 5px;
     background-color: white;
 }
-
+/* post */
 .post {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -65,7 +66,6 @@ header::after {
     background-color:var(--button-color);
     border: none;
 }
-
 .btn-primary:hover {
     background-color: var(--button-hover);
 }
@@ -74,6 +74,7 @@ header::after {
     box-shadow:none;
     background-color: var(--button-hover);
 }
+/* aside */
 aside .card{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -91,6 +92,7 @@ aside ul li a:hover {
     border-radius: 5px;
     padding:7px 7px 7px 10px;
 }
+/* footer */
 footer {
     margin-top: 40px;
     background-color: var(--footer-color);
@@ -109,13 +111,13 @@ footer input .input-group-text {
     border: none;
     border-radius: var(--bs-border-radius);
 }
+/* back to top */
 #backToTop {
     z-index: 1000;
     opacity: 0.8;
     transition: opacity 0.3s ease;
     bottom: 10px;
 }
-
 #backToTop:hover {
     opacity: 1;
 }
